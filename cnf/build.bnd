@@ -73,6 +73,8 @@
 Git-Descriptor:           ${system-allow-fail;git describe --dirty --always}
 Git-SHA:                  ${system-allow-fail;git rev-list -1 HEAD}
 
+-runblacklist: bnd.identity;id='osgi.cmpn'
+
 # JUnit
 junit: org.apache.servicemix.bundles.junit; version=4.12
 mockito: org.mockito.mockito-core; version=2.13.0
